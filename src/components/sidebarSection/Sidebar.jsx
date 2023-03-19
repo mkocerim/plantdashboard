@@ -3,6 +3,7 @@ import React from "react";
 import "./sidebar.css";
 
 /* Imported Images */
+// import logo from "../../../public/Assets/images/logo.jpeg";
 
 /* Imported Icons  */
 import { IoMdSpeedometer } from "react-icons/io";
@@ -13,12 +14,17 @@ import { AiOutlinePieChart } from "react-icons/ai";
 import { BiTrendingUp } from "react-icons/bi";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
 import { BsCreditCard2Front } from "react-icons/bs";
+import { BsQuestionCircle } from "react-icons/bs";
 
 const Sidebar = () => {
   return (
-    <div className="sideBar grid ">
+    <div className="sidebar grid ">
       <div className="logoDiv flex">
-        <img src="" alt="Image Name" />
+        <img
+          className="img-sidebar"
+          src="Assets/images/logo1.jpg"
+          alt="Image Name"
+        />
         <h2>Planti.</h2>
       </div>
 
@@ -79,6 +85,19 @@ const Sidebar = () => {
             </a>
           </li>
         </ul>
+      </div>
+
+      <div className="sideBarCard">
+        <BsQuestionCircle className="icon" />
+        <div className="cardContent">
+          <div className="circle1"></div>
+          <div className="circle2"></div>
+          <h3>Help Center</h3>
+          <p>
+            Having trouble in Planti,please contact us from for more questions.
+          </p>
+          <button className="btn">Go to Help Center</button>
+        </div>
       </div>
     </div>
   );
