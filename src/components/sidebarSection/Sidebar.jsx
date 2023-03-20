@@ -3,7 +3,7 @@ import React from "react";
 import "./sidebar.css";
 
 /* Imported Images */
-// import logo from "../../../public/Assets/images/logo.jpeg";
+import logo from "../../Assets/images/logo1.jpg";
 
 /* Imported Icons  */
 import { IoMdSpeedometer } from "react-icons/io";
@@ -20,11 +20,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar grid ">
       <div className="logoDiv flex">
-        <img
-          className="img-sidebar"
-          src="Assets/images/logo1.jpg"
-          alt="Image Name"
-        />
+        <img className="img-sidebar" src={logo} />
         <h2>Planti.</h2>
       </div>
 
