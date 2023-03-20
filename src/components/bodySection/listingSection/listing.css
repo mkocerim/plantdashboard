@@ -9,6 +9,9 @@
   --bgColor: hsl(220, 10%, 94%);
   --greyText: rgb(190, 190, 190);
   --inputColor: hsl(330, 12%, 97%);
+  --itemCardColor:hsl(120,5%,88%)
+  --itemCardHover:hsl(120,27%,87%)
+
   /*Font.ang.Typopgraphy.*/
   --biggestFontSize: 2.5rem;
   --h1FontSize: 1.5rem;
@@ -40,8 +43,85 @@
 }
 .listingSection .secContainer {
   width: 100%;
-  margin: 1rem 0;
-  gap: 1rem;
+  margin: 2rem 0;
+  gap: 0.5rem;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.listingSection .secContainer .singleItem {
+  position: relative;
+  width: 150px;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 10px;
+  background: var(--itemCardColor);
+}
+.listingSection .secContainer .singleItem:hover {
+  background: var(--itemCardHover);
+  box-shadow: 0 2px 2px var(--inputColor);
+}
+.listingSection .secContainer .singleItem img {
+  max-width: 100px;
+  margin: 10px;
+}
+.listingSection .secContainer .singleItem .icon {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  color: var(--PrimaryColor);
+}
+.listingSection .secContainer .singleItem h3 {
+  font-size: var(--h3FontSize);
+  color: var(--blackcolor);
+  padding: 1rem 0;
+}
+
+.sellers {
+  margin-top: 4rem;
+  width: 100%;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.sellers .topSellers .heading, .sellers .featuredSellers .heading {
+  padding: 1rem 0;
+}
+.sellers .topSellers .heading .btn, .sellers .featuredSellers .heading .btn {
+  padding: 0.5rem 1rem;
+}
+.sellers .topSellers .card, .sellers .featuredSellers .card {
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  background: var(--whiteColor);
+  gap: 1rem;
+  box-shadow: 0 2px 4px var(--inputColor);
+}
+.sellers .topSellers .card .users, .sellers .featuredSellers .card .users {
+  padding-right: 1rem;
+  border-right: 2px solid var(--greyText);
+}
+.sellers .topSellers .card .users img, .sellers .featuredSellers .card .users img {
+  width: 30px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid var(--inputColor);
+  transition: 0.5s ease;
+}
+.sellers .topSellers .card .users img:hover, .sellers .featuredSellers .card .users img:hover {
+  transform: translateY(-10px);
+}
+.sellers .topSellers .card .cardText span, .sellers .featuredSellers .card .cardText span {
+  color: var(--blackcolor);
+  font-weight: 500;
+}
+.sellers .topSellers .card .cardText span small, .sellers .featuredSellers .card .cardText span small {
+  font-weight: 400;
+}
+.sellers .topSellers .card .cardText span small .date, .sellers .featuredSellers .card .cardText span small .date {
+  margin-left: 1rem;
 }/*# sourceMappingURL=listing.css.map */
