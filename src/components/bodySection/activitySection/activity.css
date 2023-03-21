@@ -46,7 +46,7 @@
   align-items: flex-start;
   justify-content: space-between;
 }
-.activitySection .secContainer .singleCustomer .imgCustomer {
+.activitySection .secContainer .singleCustomer img {
   width: 40px;
   height: 40px;
   -o-object-fit: cover;
@@ -68,4 +68,15 @@
   font-weight: 500;
   color: var(--textColor);
   font-size: var(--smallFontSize);
+}
+.activitySection .secContainer .singleCustomer .duration {
+  color: var(--textColor);
+  font-weight: 500;
+  font-size: small;
+}
+
+@media screen and (max-width: 918px) {
+  .activitySection {
+    width: 100%;
+  }
 }/*# sourceMappingURL=activity.css.map */

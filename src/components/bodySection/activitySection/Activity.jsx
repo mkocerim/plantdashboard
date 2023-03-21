@@ -24,7 +24,7 @@ const Activity = () => {
 
       <div className="secContainer grid">
         <div className="singleCustomer flex">
-          <img src={user} alt="Customer Image" className="imgCustomer" />
+          <img src={user} alt="Customer Image" />
           <div className="customerDetails">
             <span className="name">Ola Martha</span>
             <small> Ordered a new plant</small>
@@ -32,7 +32,7 @@ const Activity = () => {
           <div className="duration"> 2 min ago</div>
         </div>
         <div className="singleCustomer flex">
-          <img src={user2} alt="Customer Image" className="imgCustomer" />
+          <img src={user2} alt="Customer Image" />
           <div className="customerDetails">
             <span className="name">Ola Martha</span>
             <small> Ordered a new plant</small>
@@ -40,7 +40,7 @@ const Activity = () => {
           <div className="duration"> 2 min ago</div>
         </div>
         <div className="singleCustomer flex">
-          <img src={user3} alt="Customer Image" className="imgCustomer" />
+          <img src={user3} alt="Customer Image" />
           <div className="customerDetails">
             <span className="name">Ola Martha</span>
             <small> Ordered a new plant</small>
@@ -56,7 +56,7 @@ const Activity = () => {
           <div className="duration"> 2 min ago</div>
         </div>
         <div className="singleCustomer flex">
-          <img src={user5} alt="Customer Image" className="imgCustomer" />
+          <img src={user5} alt="Customer Image" />
           <div className="customerDetails">
             <span className="name">Ola Martha</span>
             <small> Ordered a new plant</small>

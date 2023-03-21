@@ -63,14 +63,11 @@ const Top = () => {
                 Go to My Orders <BsArrowRightShort className="icon" />
               </span>
             </div>
-
             <div className="imgDiv">
               <img src={logo1} alt="Image Name" />
             </div>
 
-            {/* LATER ILL BE USED */}
-
-            {/* <div className="sideBarCard">
+            <div className="sideBarCard">
               <BsQuestionCircle className="icon" />
               <div className="cardContent">
                 <div className="circle1"></div>
@@ -82,7 +79,7 @@ const Top = () => {
                 </p>
                 <button className="btn">Go to Help Center</button>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

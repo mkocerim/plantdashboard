@@ -78,32 +78,31 @@
   color: var(--blackcolor);
   padding: 1rem 0;
 }
-
-.sellers {
+.listingSection .sellers {
   margin-top: 4rem;
   width: 100%;
   justify-content: space-between;
   gap: 1rem;
   align-items: flex-start;
 }
-.sellers .topSellers .heading, .sellers .featuredSellers .heading {
+.listingSection .sellers .topSellers .heading, .listingSection .sellers .featuredSellers .heading {
   padding: 1rem 0;
 }
-.sellers .topSellers .heading .btn, .sellers .featuredSellers .heading .btn {
+.listingSection .sellers .topSellers .heading .btn, .listingSection .sellers .featuredSellers .heading .btn {
   padding: 0.5rem 1rem;
 }
-.sellers .topSellers .card, .sellers .featuredSellers .card {
+.listingSection .sellers .topSellers .card, .listingSection .sellers .featuredSellers .card {
   padding: 1rem 1.5rem;
   border-radius: 1rem;
   background: var(--whiteColor);
   gap: 1rem;
   box-shadow: 0 2px 4px var(--inputColor);
 }
-.sellers .topSellers .card .users, .sellers .featuredSellers .card .users {
+.listingSection .sellers .topSellers .card .users, .listingSection .sellers .featuredSellers .card .users {
   padding-right: 1rem;
   border-right: 2px solid var(--greyText);
 }
-.sellers .topSellers .card .users img, .sellers .featuredSellers .card .users img {
+.listingSection .sellers .topSellers .card .users img, .listingSection .sellers .featuredSellers .card .users img {
   width: 30px;
   height: 40px;
   border-radius: 50%;
@@ -112,16 +111,32 @@
   border: 2px solid var(--inputColor);
   transition: 0.5s ease;
 }
-.sellers .topSellers .card .users img:hover, .sellers .featuredSellers .card .users img:hover {
+.listingSection .sellers .topSellers .card .users img:hover, .listingSection .sellers .featuredSellers .card .users img:hover {
   transform: translateY(-10px);
 }
-.sellers .topSellers .card .cardText span, .sellers .featuredSellers .card .cardText span {
+.listingSection .sellers .topSellers .card .cardText span, .listingSection .sellers .featuredSellers .card .cardText span {
   color: var(--blackcolor);
   font-weight: 500;
 }
-.sellers .topSellers .card .cardText span small, .sellers .featuredSellers .card .cardText span small {
+.listingSection .sellers .topSellers .card .cardText span small, .listingSection .sellers .featuredSellers .card .cardText span small {
   font-weight: 400;
 }
-.sellers .topSellers .card .cardText span small .date, .sellers .featuredSellers .card .cardText span small .date {
+.listingSection .sellers .topSellers .card .cardText span small .date, .listingSection .sellers .featuredSellers .card .cardText span small .date {
   margin-left: 1rem;
+}
+
+@media screen and (max-width: 990px) {
+  .listingSection .sellers .card {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 918px) {
+  .listingSection .singleItem {
+    width: 200px !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .listingSection .singleItem {
+    width: 200px !important;
+  }
 }/*# sourceMappingURL=listing.css.map */
